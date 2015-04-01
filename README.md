@@ -35,6 +35,17 @@ Results returns in the form of a tuple:
 >>> WTlib = Whatype()
 >>> WTlib.identify_file("C:\\BinaryFile.exe")
 ('Windows executable file', 'EXE')
+
+>>> with open(r"C:\\java-archive.jar",'rb') as f:
+...     cont = f.read()
+...
+>>> WTlib.identify_buffer(cont)
+('Java archive', 'JAR')
+```
+
+**Installation**
+```python
+setup.py install
 ```
 
 ## Info
