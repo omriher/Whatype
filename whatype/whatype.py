@@ -43,7 +43,7 @@ class MagicNode(object):
 
 class Whatype(object):
     WTver = "0.1"
-    WTrev = "01"
+    WTrev = "02"
     MAGICLIST_NAME = "magics.csv"
 
     def __init__(self,magic_file=""):
